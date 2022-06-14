@@ -1,0 +1,1228 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7AAA5FB428591D3100DB76AC /* SocialWatchAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAA5FB328591D3100DB76AC /* SocialWatchAppApp.swift */; };
+		7AAA5FB628591D3100DB76AC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAA5FB528591D3100DB76AC /* ContentView.swift */; };
+		7AAA5FB828591D3100DB76AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AAA5FB728591D3100DB76AC /* Assets.xcassets */; };
+		7AAA5FBB28591D3100DB76AC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AAA5FBA28591D3100DB76AC /* Preview Assets.xcassets */; };
+		7AAA5FC528591D3200DB76AC /* SocialWatchAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAA5FC428591D3200DB76AC /* SocialWatchAppTests.swift */; };
+		7AAA5FCF28591D3200DB76AC /* SocialWatchAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAA5FCE28591D3200DB76AC /* SocialWatchAppUITests.swift */; };
+		7AAA5FD128591D3200DB76AC /* SocialWatchAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAA5FD028591D3200DB76AC /* SocialWatchAppUITestsLaunchTests.swift */; };
+		7AAA5FD528591D3200DB76AC /* SocialWatchApp WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 7AAA5FD428591D3200DB76AC /* SocialWatchApp WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7AAA5FDA28591D3200DB76AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AAA5FD928591D3200DB76AC /* Assets.xcassets */; };
+		7AAA5FE028591D3200DB76AC /* SocialWatchApp WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7AAA5FDF28591D3200DB76AC /* SocialWatchApp WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7AAA5FE528591D3200DB76AC /* SocialWatchAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAA5FE428591D3200DB76AC /* SocialWatchAppApp.swift */; };
+		7AAA5FE728591D3200DB76AC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAA5FE628591D3200DB76AC /* ContentView.swift */; };
+		7AAA5FE928591D3200DB76AC /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAA5FE828591D3200DB76AC /* NotificationController.swift */; };
+		7AAA5FEB28591D3200DB76AC /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAA5FEA28591D3200DB76AC /* NotificationView.swift */; };
+		7AAA5FED28591D3200DB76AC /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAA5FEC28591D3200DB76AC /* ComplicationController.swift */; };
+		7AAA5FEF28591D3300DB76AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AAA5FEE28591D3300DB76AC /* Assets.xcassets */; };
+		7AAA5FF228591D3300DB76AC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AAA5FF128591D3300DB76AC /* Preview Assets.xcassets */; };
+		7AAA5FFE28591D3300DB76AC /* SocialWatchApp_WatchKit_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAA5FFD28591D3300DB76AC /* SocialWatchApp_WatchKit_AppTests.swift */; };
+		7AAA600828591D3300DB76AC /* SocialWatchApp_WatchKit_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAA600728591D3300DB76AC /* SocialWatchApp_WatchKit_AppUITests.swift */; };
+		7AAA600A28591D3300DB76AC /* SocialWatchApp_WatchKit_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAA600928591D3300DB76AC /* SocialWatchApp_WatchKit_AppUITestsLaunchTests.swift */; };
+		7AAA602528591E4B00DB76AC /* WelcomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAA602428591E4B00DB76AC /* WelcomeScreenView.swift */; };
+		7AAA602728591E7300DB76AC /* SignInScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAA602628591E7300DB76AC /* SignInScreenView.swift */; };
+		7AAA6029285927EC00DB76AC /* ViewModelPhone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAA6028285927EC00DB76AC /* ViewModelPhone.swift */; };
+		7AAA602B285928E500DB76AC /* ViewModelWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAA602A285928E500DB76AC /* ViewModelWatch.swift */; };
+		7AAA602D28592CD100DB76AC /* MainListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAA602C28592CD100DB76AC /* MainListView.swift */; };
+		7AAA60302859391500DB76AC /* CachedAsyncImage in Frameworks */ = {isa = PBXBuildFile; productRef = 7AAA602F2859391500DB76AC /* CachedAsyncImage */; };
+		7AAA6033285939B200DB76AC /* CachedAsyncImage in Frameworks */ = {isa = PBXBuildFile; productRef = 7AAA6032285939B200DB76AC /* CachedAsyncImage */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7AAA5FC128591D3100DB76AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7AAA5FA828591D3100DB76AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7AAA5FAF28591D3100DB76AC;
+			remoteInfo = SocialWatchApp;
+		};
+		7AAA5FCB28591D3200DB76AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7AAA5FA828591D3100DB76AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7AAA5FAF28591D3100DB76AC;
+			remoteInfo = SocialWatchApp;
+		};
+		7AAA5FD628591D3200DB76AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7AAA5FA828591D3100DB76AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7AAA5FD328591D3200DB76AC;
+			remoteInfo = "SocialWatchApp WatchKit App";
+		};
+		7AAA5FE128591D3200DB76AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7AAA5FA828591D3100DB76AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7AAA5FDE28591D3200DB76AC;
+			remoteInfo = "SocialWatchApp WatchKit Extension";
+		};
+		7AAA5FFA28591D3300DB76AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7AAA5FA828591D3100DB76AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7AAA5FDE28591D3200DB76AC;
+			remoteInfo = "SocialWatchApp WatchKit Extension";
+		};
+		7AAA600428591D3300DB76AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7AAA5FA828591D3100DB76AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7AAA5FD328591D3200DB76AC;
+			remoteInfo = "SocialWatchApp WatchKit App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7AAA601028591D3300DB76AC /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				7AAA5FE028591D3200DB76AC /* SocialWatchApp WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AAA601428591D3300DB76AC /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				7AAA5FD528591D3200DB76AC /* SocialWatchApp WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		7AAA5FB028591D3100DB76AC /* SocialWatchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialWatchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AAA5FB328591D3100DB76AC /* SocialWatchAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialWatchAppApp.swift; sourceTree = "<group>"; };
+		7AAA5FB528591D3100DB76AC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7AAA5FB728591D3100DB76AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7AAA5FBA28591D3100DB76AC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7AAA5FC028591D3100DB76AC /* SocialWatchAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SocialWatchAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AAA5FC428591D3200DB76AC /* SocialWatchAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialWatchAppTests.swift; sourceTree = "<group>"; };
+		7AAA5FCA28591D3200DB76AC /* SocialWatchAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SocialWatchAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AAA5FCE28591D3200DB76AC /* SocialWatchAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialWatchAppUITests.swift; sourceTree = "<group>"; };
+		7AAA5FD028591D3200DB76AC /* SocialWatchAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialWatchAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7AAA5FD428591D3200DB76AC /* SocialWatchApp WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SocialWatchApp WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AAA5FD928591D3200DB76AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7AAA5FDF28591D3200DB76AC /* SocialWatchApp WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "SocialWatchApp WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AAA5FE428591D3200DB76AC /* SocialWatchAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialWatchAppApp.swift; sourceTree = "<group>"; };
+		7AAA5FE628591D3200DB76AC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7AAA5FE828591D3200DB76AC /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		7AAA5FEA28591D3200DB76AC /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		7AAA5FEC28591D3200DB76AC /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		7AAA5FEE28591D3300DB76AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7AAA5FF128591D3300DB76AC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7AAA5FF328591D3300DB76AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7AAA5FF428591D3300DB76AC /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		7AAA5FF928591D3300DB76AC /* SocialWatchApp WatchKit AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SocialWatchApp WatchKit AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AAA5FFD28591D3300DB76AC /* SocialWatchApp_WatchKit_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialWatchApp_WatchKit_AppTests.swift; sourceTree = "<group>"; };
+		7AAA600328591D3300DB76AC /* SocialWatchApp WatchKit AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SocialWatchApp WatchKit AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AAA600728591D3300DB76AC /* SocialWatchApp_WatchKit_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialWatchApp_WatchKit_AppUITests.swift; sourceTree = "<group>"; };
+		7AAA600928591D3300DB76AC /* SocialWatchApp_WatchKit_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialWatchApp_WatchKit_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7AAA602428591E4B00DB76AC /* WelcomeScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreenView.swift; sourceTree = "<group>"; };
+		7AAA602628591E7300DB76AC /* SignInScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInScreenView.swift; sourceTree = "<group>"; };
+		7AAA6028285927EC00DB76AC /* ViewModelPhone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelPhone.swift; sourceTree = "<group>"; };
+		7AAA602A285928E500DB76AC /* ViewModelWatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelWatch.swift; sourceTree = "<group>"; };
+		7AAA602C28592CD100DB76AC /* MainListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainListView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7AAA5FAD28591D3100DB76AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AAA60302859391500DB76AC /* CachedAsyncImage in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AAA5FBD28591D3100DB76AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AAA5FC728591D3200DB76AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AAA5FDC28591D3200DB76AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AAA6033285939B200DB76AC /* CachedAsyncImage in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AAA5FF628591D3300DB76AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AAA600028591D3300DB76AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7AAA5FA728591D3100DB76AC = {
+			isa = PBXGroup;
+			children = (
+				7AAA5FB228591D3100DB76AC /* SocialWatchApp */,
+				7AAA5FC328591D3100DB76AC /* SocialWatchAppTests */,
+				7AAA5FCD28591D3200DB76AC /* SocialWatchAppUITests */,
+				7AAA5FD828591D3200DB76AC /* SocialWatchApp WatchKit App */,
+				7AAA5FE328591D3200DB76AC /* SocialWatchApp WatchKit Extension */,
+				7AAA5FFC28591D3300DB76AC /* SocialWatchApp WatchKit AppTests */,
+				7AAA600628591D3300DB76AC /* SocialWatchApp WatchKit AppUITests */,
+				7AAA5FB128591D3100DB76AC /* Products */,
+				7AAA6031285939B200DB76AC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7AAA5FB128591D3100DB76AC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7AAA5FB028591D3100DB76AC /* SocialWatchApp.app */,
+				7AAA5FC028591D3100DB76AC /* SocialWatchAppTests.xctest */,
+				7AAA5FCA28591D3200DB76AC /* SocialWatchAppUITests.xctest */,
+				7AAA5FD428591D3200DB76AC /* SocialWatchApp WatchKit App.app */,
+				7AAA5FDF28591D3200DB76AC /* SocialWatchApp WatchKit Extension.appex */,
+				7AAA5FF928591D3300DB76AC /* SocialWatchApp WatchKit AppTests.xctest */,
+				7AAA600328591D3300DB76AC /* SocialWatchApp WatchKit AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7AAA5FB228591D3100DB76AC /* SocialWatchApp */ = {
+			isa = PBXGroup;
+			children = (
+				7AAA5FB328591D3100DB76AC /* SocialWatchAppApp.swift */,
+				7AAA602428591E4B00DB76AC /* WelcomeScreenView.swift */,
+				7AAA602628591E7300DB76AC /* SignInScreenView.swift */,
+				7AAA5FB528591D3100DB76AC /* ContentView.swift */,
+				7AAA5FB728591D3100DB76AC /* Assets.xcassets */,
+				7AAA5FB928591D3100DB76AC /* Preview Content */,
+				7AAA6028285927EC00DB76AC /* ViewModelPhone.swift */,
+			);
+			path = SocialWatchApp;
+			sourceTree = "<group>";
+		};
+		7AAA5FB928591D3100DB76AC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				7AAA5FBA28591D3100DB76AC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7AAA5FC328591D3100DB76AC /* SocialWatchAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				7AAA5FC428591D3200DB76AC /* SocialWatchAppTests.swift */,
+			);
+			path = SocialWatchAppTests;
+			sourceTree = "<group>";
+		};
+		7AAA5FCD28591D3200DB76AC /* SocialWatchAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7AAA5FCE28591D3200DB76AC /* SocialWatchAppUITests.swift */,
+				7AAA5FD028591D3200DB76AC /* SocialWatchAppUITestsLaunchTests.swift */,
+			);
+			path = SocialWatchAppUITests;
+			sourceTree = "<group>";
+		};
+		7AAA5FD828591D3200DB76AC /* SocialWatchApp WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				7AAA5FD928591D3200DB76AC /* Assets.xcassets */,
+			);
+			path = "SocialWatchApp WatchKit App";
+			sourceTree = "<group>";
+		};
+		7AAA5FE328591D3200DB76AC /* SocialWatchApp WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				7AAA5FE428591D3200DB76AC /* SocialWatchAppApp.swift */,
+				7AAA5FE628591D3200DB76AC /* ContentView.swift */,
+				7AAA5FE828591D3200DB76AC /* NotificationController.swift */,
+				7AAA5FEA28591D3200DB76AC /* NotificationView.swift */,
+				7AAA5FEC28591D3200DB76AC /* ComplicationController.swift */,
+				7AAA5FEE28591D3300DB76AC /* Assets.xcassets */,
+				7AAA5FF328591D3300DB76AC /* Info.plist */,
+				7AAA5FF428591D3300DB76AC /* PushNotificationPayload.apns */,
+				7AAA5FF028591D3300DB76AC /* Preview Content */,
+				7AAA602A285928E500DB76AC /* ViewModelWatch.swift */,
+				7AAA602C28592CD100DB76AC /* MainListView.swift */,
+			);
+			path = "SocialWatchApp WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		7AAA5FF028591D3300DB76AC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				7AAA5FF128591D3300DB76AC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7AAA5FFC28591D3300DB76AC /* SocialWatchApp WatchKit AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				7AAA5FFD28591D3300DB76AC /* SocialWatchApp_WatchKit_AppTests.swift */,
+			);
+			path = "SocialWatchApp WatchKit AppTests";
+			sourceTree = "<group>";
+		};
+		7AAA600628591D3300DB76AC /* SocialWatchApp WatchKit AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7AAA600728591D3300DB76AC /* SocialWatchApp_WatchKit_AppUITests.swift */,
+				7AAA600928591D3300DB76AC /* SocialWatchApp_WatchKit_AppUITestsLaunchTests.swift */,
+			);
+			path = "SocialWatchApp WatchKit AppUITests";
+			sourceTree = "<group>";
+		};
+		7AAA6031285939B200DB76AC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7AAA5FAF28591D3100DB76AC /* SocialWatchApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7AAA601528591D3300DB76AC /* Build configuration list for PBXNativeTarget "SocialWatchApp" */;
+			buildPhases = (
+				7AAA5FAC28591D3100DB76AC /* Sources */,
+				7AAA5FAD28591D3100DB76AC /* Frameworks */,
+				7AAA5FAE28591D3100DB76AC /* Resources */,
+				7AAA601428591D3300DB76AC /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7AAA5FD728591D3200DB76AC /* PBXTargetDependency */,
+			);
+			name = SocialWatchApp;
+			packageProductDependencies = (
+				7AAA602F2859391500DB76AC /* CachedAsyncImage */,
+			);
+			productName = SocialWatchApp;
+			productReference = 7AAA5FB028591D3100DB76AC /* SocialWatchApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7AAA5FBF28591D3100DB76AC /* SocialWatchAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7AAA601828591D3300DB76AC /* Build configuration list for PBXNativeTarget "SocialWatchAppTests" */;
+			buildPhases = (
+				7AAA5FBC28591D3100DB76AC /* Sources */,
+				7AAA5FBD28591D3100DB76AC /* Frameworks */,
+				7AAA5FBE28591D3100DB76AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7AAA5FC228591D3100DB76AC /* PBXTargetDependency */,
+			);
+			name = SocialWatchAppTests;
+			productName = SocialWatchAppTests;
+			productReference = 7AAA5FC028591D3100DB76AC /* SocialWatchAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7AAA5FC928591D3200DB76AC /* SocialWatchAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7AAA601B28591D3300DB76AC /* Build configuration list for PBXNativeTarget "SocialWatchAppUITests" */;
+			buildPhases = (
+				7AAA5FC628591D3200DB76AC /* Sources */,
+				7AAA5FC728591D3200DB76AC /* Frameworks */,
+				7AAA5FC828591D3200DB76AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7AAA5FCC28591D3200DB76AC /* PBXTargetDependency */,
+			);
+			name = SocialWatchAppUITests;
+			productName = SocialWatchAppUITests;
+			productReference = 7AAA5FCA28591D3200DB76AC /* SocialWatchAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		7AAA5FD328591D3200DB76AC /* SocialWatchApp WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7AAA601128591D3300DB76AC /* Build configuration list for PBXNativeTarget "SocialWatchApp WatchKit App" */;
+			buildPhases = (
+				7AAA5FD228591D3200DB76AC /* Resources */,
+				7AAA601028591D3300DB76AC /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7AAA5FE228591D3200DB76AC /* PBXTargetDependency */,
+			);
+			name = "SocialWatchApp WatchKit App";
+			productName = "SocialWatchApp WatchKit App";
+			productReference = 7AAA5FD428591D3200DB76AC /* SocialWatchApp WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		7AAA5FDE28591D3200DB76AC /* SocialWatchApp WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7AAA600D28591D3300DB76AC /* Build configuration list for PBXNativeTarget "SocialWatchApp WatchKit Extension" */;
+			buildPhases = (
+				7AAA5FDB28591D3200DB76AC /* Sources */,
+				7AAA5FDC28591D3200DB76AC /* Frameworks */,
+				7AAA5FDD28591D3200DB76AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SocialWatchApp WatchKit Extension";
+			packageProductDependencies = (
+				7AAA6032285939B200DB76AC /* CachedAsyncImage */,
+			);
+			productName = "SocialWatchApp WatchKit Extension";
+			productReference = 7AAA5FDF28591D3200DB76AC /* SocialWatchApp WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		7AAA5FF828591D3300DB76AC /* SocialWatchApp WatchKit AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7AAA601E28591D3300DB76AC /* Build configuration list for PBXNativeTarget "SocialWatchApp WatchKit AppTests" */;
+			buildPhases = (
+				7AAA5FF528591D3300DB76AC /* Sources */,
+				7AAA5FF628591D3300DB76AC /* Frameworks */,
+				7AAA5FF728591D3300DB76AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7AAA5FFB28591D3300DB76AC /* PBXTargetDependency */,
+			);
+			name = "SocialWatchApp WatchKit AppTests";
+			productName = "SocialWatchApp WatchKit AppTests";
+			productReference = 7AAA5FF928591D3300DB76AC /* SocialWatchApp WatchKit AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7AAA600228591D3300DB76AC /* SocialWatchApp WatchKit AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7AAA602128591D3300DB76AC /* Build configuration list for PBXNativeTarget "SocialWatchApp WatchKit AppUITests" */;
+			buildPhases = (
+				7AAA5FFF28591D3300DB76AC /* Sources */,
+				7AAA600028591D3300DB76AC /* Frameworks */,
+				7AAA600128591D3300DB76AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7AAA600528591D3300DB76AC /* PBXTargetDependency */,
+			);
+			name = "SocialWatchApp WatchKit AppUITests";
+			productName = "SocialWatchApp WatchKit AppUITests";
+			productReference = 7AAA600328591D3300DB76AC /* SocialWatchApp WatchKit AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7AAA5FA828591D3100DB76AC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					7AAA5FAF28591D3100DB76AC = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					7AAA5FBF28591D3100DB76AC = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 7AAA5FAF28591D3100DB76AC;
+					};
+					7AAA5FC928591D3200DB76AC = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 7AAA5FAF28591D3100DB76AC;
+					};
+					7AAA5FD328591D3200DB76AC = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					7AAA5FDE28591D3200DB76AC = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					7AAA5FF828591D3300DB76AC = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 7AAA5FDE28591D3200DB76AC;
+					};
+					7AAA600228591D3300DB76AC = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 7AAA5FD328591D3200DB76AC;
+					};
+				};
+			};
+			buildConfigurationList = 7AAA5FAB28591D3100DB76AC /* Build configuration list for PBXProject "SocialWatchApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7AAA5FA728591D3100DB76AC;
+			packageReferences = (
+				7AAA602E2859391400DB76AC /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */,
+			);
+			productRefGroup = 7AAA5FB128591D3100DB76AC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7AAA5FAF28591D3100DB76AC /* SocialWatchApp */,
+				7AAA5FBF28591D3100DB76AC /* SocialWatchAppTests */,
+				7AAA5FC928591D3200DB76AC /* SocialWatchAppUITests */,
+				7AAA5FD328591D3200DB76AC /* SocialWatchApp WatchKit App */,
+				7AAA5FDE28591D3200DB76AC /* SocialWatchApp WatchKit Extension */,
+				7AAA5FF828591D3300DB76AC /* SocialWatchApp WatchKit AppTests */,
+				7AAA600228591D3300DB76AC /* SocialWatchApp WatchKit AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7AAA5FAE28591D3100DB76AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AAA5FBB28591D3100DB76AC /* Preview Assets.xcassets in Resources */,
+				7AAA5FB828591D3100DB76AC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AAA5FBE28591D3100DB76AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AAA5FC828591D3200DB76AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AAA5FD228591D3200DB76AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AAA5FDA28591D3200DB76AC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AAA5FDD28591D3200DB76AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AAA5FF228591D3300DB76AC /* Preview Assets.xcassets in Resources */,
+				7AAA5FEF28591D3300DB76AC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AAA5FF728591D3300DB76AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AAA600128591D3300DB76AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7AAA5FAC28591D3100DB76AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AAA6029285927EC00DB76AC /* ViewModelPhone.swift in Sources */,
+				7AAA602728591E7300DB76AC /* SignInScreenView.swift in Sources */,
+				7AAA602528591E4B00DB76AC /* WelcomeScreenView.swift in Sources */,
+				7AAA5FB628591D3100DB76AC /* ContentView.swift in Sources */,
+				7AAA5FB428591D3100DB76AC /* SocialWatchAppApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AAA5FBC28591D3100DB76AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AAA5FC528591D3200DB76AC /* SocialWatchAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AAA5FC628591D3200DB76AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AAA5FCF28591D3200DB76AC /* SocialWatchAppUITests.swift in Sources */,
+				7AAA5FD128591D3200DB76AC /* SocialWatchAppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AAA5FDB28591D3200DB76AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AAA5FE928591D3200DB76AC /* NotificationController.swift in Sources */,
+				7AAA5FE728591D3200DB76AC /* ContentView.swift in Sources */,
+				7AAA5FED28591D3200DB76AC /* ComplicationController.swift in Sources */,
+				7AAA5FE528591D3200DB76AC /* SocialWatchAppApp.swift in Sources */,
+				7AAA602D28592CD100DB76AC /* MainListView.swift in Sources */,
+				7AAA602B285928E500DB76AC /* ViewModelWatch.swift in Sources */,
+				7AAA5FEB28591D3200DB76AC /* NotificationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AAA5FF528591D3300DB76AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AAA5FFE28591D3300DB76AC /* SocialWatchApp_WatchKit_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AAA5FFF28591D3300DB76AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AAA600A28591D3300DB76AC /* SocialWatchApp_WatchKit_AppUITestsLaunchTests.swift in Sources */,
+				7AAA600828591D3300DB76AC /* SocialWatchApp_WatchKit_AppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7AAA5FC228591D3100DB76AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7AAA5FAF28591D3100DB76AC /* SocialWatchApp */;
+			targetProxy = 7AAA5FC128591D3100DB76AC /* PBXContainerItemProxy */;
+		};
+		7AAA5FCC28591D3200DB76AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7AAA5FAF28591D3100DB76AC /* SocialWatchApp */;
+			targetProxy = 7AAA5FCB28591D3200DB76AC /* PBXContainerItemProxy */;
+		};
+		7AAA5FD728591D3200DB76AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7AAA5FD328591D3200DB76AC /* SocialWatchApp WatchKit App */;
+			targetProxy = 7AAA5FD628591D3200DB76AC /* PBXContainerItemProxy */;
+		};
+		7AAA5FE228591D3200DB76AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7AAA5FDE28591D3200DB76AC /* SocialWatchApp WatchKit Extension */;
+			targetProxy = 7AAA5FE128591D3200DB76AC /* PBXContainerItemProxy */;
+		};
+		7AAA5FFB28591D3300DB76AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7AAA5FDE28591D3200DB76AC /* SocialWatchApp WatchKit Extension */;
+			targetProxy = 7AAA5FFA28591D3300DB76AC /* PBXContainerItemProxy */;
+		};
+		7AAA600528591D3300DB76AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7AAA5FD328591D3200DB76AC /* SocialWatchApp WatchKit App */;
+			targetProxy = 7AAA600428591D3300DB76AC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		7AAA600B28591D3300DB76AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7AAA600C28591D3300DB76AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		7AAA600E28591D3300DB76AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SocialWatchApp WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = PURRL7RYJS;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SocialWatchApp WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "SocialWatchApp WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.serhatsezen.SocialWatchApp.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		7AAA600F28591D3300DB76AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SocialWatchApp WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = PURRL7RYJS;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SocialWatchApp WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "SocialWatchApp WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.serhatsezen.SocialWatchApp.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+		7AAA601228591D3300DB76AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PURRL7RYJS;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = SocialWatchApp_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "SocialWatchApp WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.serhatsezen.SocialWatchApp;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.serhatsezen.SocialWatchApp.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		7AAA601328591D3300DB76AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PURRL7RYJS;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = SocialWatchApp_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "SocialWatchApp WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.serhatsezen.SocialWatchApp;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.serhatsezen.SocialWatchApp.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+		7AAA601628591D3300DB76AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SocialWatchApp/Preview Content\"";
+				DEVELOPMENT_TEAM = PURRL7RYJS;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.serhatsezen.SocialWatchApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7AAA601728591D3300DB76AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SocialWatchApp/Preview Content\"";
+				DEVELOPMENT_TEAM = PURRL7RYJS;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.serhatsezen.SocialWatchApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7AAA601928591D3300DB76AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PURRL7RYJS;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.serhatsezen.SocialWatchAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SocialWatchApp.app/SocialWatchApp";
+			};
+			name = Debug;
+		};
+		7AAA601A28591D3300DB76AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PURRL7RYJS;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.serhatsezen.SocialWatchAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SocialWatchApp.app/SocialWatchApp";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7AAA601C28591D3300DB76AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PURRL7RYJS;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.serhatsezen.SocialWatchAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SocialWatchApp;
+			};
+			name = Debug;
+		};
+		7AAA601D28591D3300DB76AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PURRL7RYJS;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.serhatsezen.SocialWatchAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SocialWatchApp;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7AAA601F28591D3300DB76AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PURRL7RYJS;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.serhatsezen.SocialWatchApp-WatchKit-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SocialWatchApp WatchKit Extension.appex/SocialWatchApp WatchKit Extension";
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		7AAA602028591D3300DB76AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PURRL7RYJS;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.serhatsezen.SocialWatchApp-WatchKit-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SocialWatchApp WatchKit Extension.appex/SocialWatchApp WatchKit Extension";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+		7AAA602228591D3300DB76AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PURRL7RYJS;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.serhatsezen.SocialWatchApp-WatchKit-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "SocialWatchApp WatchKit App";
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		7AAA602328591D3300DB76AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PURRL7RYJS;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.serhatsezen.SocialWatchApp-WatchKit-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "SocialWatchApp WatchKit App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7AAA5FAB28591D3100DB76AC /* Build configuration list for PBXProject "SocialWatchApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7AAA600B28591D3300DB76AC /* Debug */,
+				7AAA600C28591D3300DB76AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7AAA600D28591D3300DB76AC /* Build configuration list for PBXNativeTarget "SocialWatchApp WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7AAA600E28591D3300DB76AC /* Debug */,
+				7AAA600F28591D3300DB76AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7AAA601128591D3300DB76AC /* Build configuration list for PBXNativeTarget "SocialWatchApp WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7AAA601228591D3300DB76AC /* Debug */,
+				7AAA601328591D3300DB76AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7AAA601528591D3300DB76AC /* Build configuration list for PBXNativeTarget "SocialWatchApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7AAA601628591D3300DB76AC /* Debug */,
+				7AAA601728591D3300DB76AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7AAA601828591D3300DB76AC /* Build configuration list for PBXNativeTarget "SocialWatchAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7AAA601928591D3300DB76AC /* Debug */,
+				7AAA601A28591D3300DB76AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7AAA601B28591D3300DB76AC /* Build configuration list for PBXNativeTarget "SocialWatchAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7AAA601C28591D3300DB76AC /* Debug */,
+				7AAA601D28591D3300DB76AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7AAA601E28591D3300DB76AC /* Build configuration list for PBXNativeTarget "SocialWatchApp WatchKit AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7AAA601F28591D3300DB76AC /* Debug */,
+				7AAA602028591D3300DB76AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7AAA602128591D3300DB76AC /* Build configuration list for PBXNativeTarget "SocialWatchApp WatchKit AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7AAA602228591D3300DB76AC /* Debug */,
+				7AAA602328591D3300DB76AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7AAA602E2859391400DB76AC /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/lorenzofiamingo/swiftui-cached-async-image";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7AAA602F2859391500DB76AC /* CachedAsyncImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7AAA602E2859391400DB76AC /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */;
+			productName = CachedAsyncImage;
+		};
+		7AAA6032285939B200DB76AC /* CachedAsyncImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7AAA602E2859391400DB76AC /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */;
+			productName = CachedAsyncImage;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 7AAA5FA828591D3100DB76AC /* Project object */;
+}
