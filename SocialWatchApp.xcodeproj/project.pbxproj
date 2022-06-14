@@ -34,6 +34,8 @@
 		7AAA602D28592CD100DB76AC /* MainListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAA602C28592CD100DB76AC /* MainListView.swift */; };
 		7AAA60302859391500DB76AC /* CachedAsyncImage in Frameworks */ = {isa = PBXBuildFile; productRef = 7AAA602F2859391500DB76AC /* CachedAsyncImage */; };
 		7AAA6033285939B200DB76AC /* CachedAsyncImage in Frameworks */ = {isa = PBXBuildFile; productRef = 7AAA6032285939B200DB76AC /* CachedAsyncImage */; };
+		7AD6B925285948F60043D67D /* watchss.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AD6B924285948F60043D67D /* watchss.png */; };
+		7AD6B927285949040043D67D /* phoness.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AD6B926285949040043D67D /* phoness.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -139,6 +141,8 @@
 		7AAA6028285927EC00DB76AC /* ViewModelPhone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelPhone.swift; sourceTree = "<group>"; };
 		7AAA602A285928E500DB76AC /* ViewModelWatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelWatch.swift; sourceTree = "<group>"; };
 		7AAA602C28592CD100DB76AC /* MainListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainListView.swift; sourceTree = "<group>"; };
+		7AD6B924285948F60043D67D /* watchss.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = watchss.png; sourceTree = "<group>"; };
+		7AD6B926285949040043D67D /* phoness.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = phoness.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +196,7 @@
 		7AAA5FA728591D3100DB76AC = {
 			isa = PBXGroup;
 			children = (
+				7AD6B923285948DF0043D67D /* Images */,
 				7AAA5FB228591D3100DB76AC /* SocialWatchApp */,
 				7AAA5FC328591D3100DB76AC /* SocialWatchAppTests */,
 				7AAA5FCD28591D3200DB76AC /* SocialWatchAppUITests */,
@@ -313,6 +318,15 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7AD6B923285948DF0043D67D /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				7AD6B924285948F60043D67D /* watchss.png */,
+				7AD6B926285949040043D67D /* phoness.png */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -520,6 +534,8 @@
 			files = (
 				7AAA5FBB28591D3100DB76AC /* Preview Assets.xcassets in Resources */,
 				7AAA5FB828591D3100DB76AC /* Assets.xcassets in Resources */,
+				7AD6B927285949040043D67D /* phoness.png in Resources */,
+				7AD6B925285948F60043D67D /* watchss.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

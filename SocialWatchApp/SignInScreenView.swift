@@ -43,7 +43,7 @@ struct SignInScreenView: View {
                         .cornerRadius(50.0)
                         .shadow(color: Color.black.opacity(0.08), radius: 60, x: /*@START_MENU_TOKEN@*/0.0/*@END_MENU_TOKEN@*/, y: 16)
                     
-                    TextField("Password", text: $password)
+                    SecureField("Password", text: $password)
                         .font(.title3)
                         .padding()
                         .frame(maxWidth: .infinity)

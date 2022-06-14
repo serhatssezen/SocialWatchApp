@@ -10,7 +10,6 @@ import WatchConnectivity
 
 struct ContentView: View {
     @ObservedObject var model = ViewModelWatch()
-    @State private var EnrouteText = "Enroute"
 
     var body: some View {
         ZStack {
