@@ -40,7 +40,6 @@
 		7AAF58B4286CD3C000EA7AAC /* NetworkDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAF58B3286CD3C000EA7AAC /* NetworkDispatcher.swift */; };
 		7AAF58B6286CD3D300EA7AAC /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAF58B5286CD3D300EA7AAC /* APIClient.swift */; };
 		7AAF58BA286CD41500EA7AAC /* Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAF58B9286CD41500EA7AAC /* Products.swift */; };
-		7AAF58BF286CD4A700EA7AAC /* AddTodo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAF58BE286CD4A700EA7AAC /* AddTodo.swift */; };
 		7AAF58C1286CD8FE00EA7AAC /* ProductsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAF58C0286CD8FE00EA7AAC /* ProductsViewModel.swift */; };
 		7AAF58C3286CE5E900EA7AAC /* GetProducts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAF58C2286CE5E900EA7AAC /* GetProducts.swift */; };
 		7AC58169286E553D00B9F3A2 /* PagingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC58168286E553D00B9F3A2 /* PagingView.swift */; };
@@ -702,7 +701,6 @@
 				7AAA5FE928591D3200DB76AC /* NotificationController.swift in Sources */,
 				7AAA5FE728591D3200DB76AC /* ContentView.swift in Sources */,
 				7AAF58B0286CD37A00EA7AAC /* NetworkRequestError.swift in Sources */,
-				7AAF58BF286CD4A700EA7AAC /* AddTodo.swift in Sources */,
 				7AAF58B4286CD3C000EA7AAC /* NetworkDispatcher.swift in Sources */,
 				7AAA5FED28591D3200DB76AC /* ComplicationController.swift in Sources */,
 				7AAA5FE528591D3200DB76AC /* SocialWatchAppApp.swift in Sources */,
