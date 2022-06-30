@@ -55,7 +55,7 @@ struct SignInScreenView: View {
                     PrimaryButton(title: "Login")
                         .onTapGesture {
                             if self.model.session.isReachable {
-                                self.model.session.sendMessage(["isLogged" : "true"], replyHandler: nil) { (error) in
+                                self.model.session.sendMessage(["isLogged" : "true", "Token": "A23231sacsdgew234"], replyHandler: nil) { (error) in
                                     print(error.localizedDescription)
                                 }
                             } else {

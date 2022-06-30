@@ -10,15 +10,19 @@ import WatchConnectivity
 
 struct ContentView: View {
     @ObservedObject var model = ViewModelWatch()
+    let defaults = UserDefaults.standard
 
     var body: some View {
         ZStack {
-            if self.model.session.isReachable && self.model.messageText == "true" {
+            if defaults.string(forKey: "Token") != nil {
+                MainListView()
+            } else if self.model.session.isReachable && self.model.messageText == "true" {
                 MainListView()
             } else {
                 Text("Cihazınızda oturum açınız!")
             }
         }
+        .background(.green)
     }
 }
 
